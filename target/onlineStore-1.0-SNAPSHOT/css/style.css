@@ -1,0 +1,60 @@
+.custom-bg{
+    background: #C0CA33!important;
+}
+
+.admin .card{
+    border: 1px solid red;
+}
+
+.admin .card:hover{
+    box-shadow: 1px 1px 10px 5px  rgba(236, 85, 15, 0.89);
+    cursor: pointer;
+}
+
+#toast{
+    min-width: 250px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -120px;
+    background: black;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 20px;
+    visibility: hidden;
+    box-shadow: 0px 0px 70px #000;
+}
+
+#toast.display{
+    visibility: visible;
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn{
+    from{
+        bottom : 0;
+        opacity : 0;
+    }
+    
+    to{
+        bottom : 30px;
+        opacity : 1;
+        
+    }
+}
+
+@keyframes fadeOut{
+    from{
+         bottom : 30px;
+        opacity : 1;
+    }
+    
+    to{
+       
+        bottom : 0;
+        opacity : 0;
+        
+    }
+}
